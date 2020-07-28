@@ -26,11 +26,15 @@ Must be installed docker and docker-compose
 
 
 ## First Steps
+
+### Create a env file as a _.env.sample_ and add a GIPHY_KEY
+> GIPHY_KEY=<YOUR_KEY>
+
 ### Run to build a container (<span style="color:red"> it may take a while to install if you don't have the image built </span>)
 ```bash
 make build
 ```
-- make build it's command to run a docker-compose.yml and it makes a images build as **_app_**, **_delivery-database_**
+- make build it's command to run a docker-compose.yml and it makes a images build all images
 
 ### Start the system
 ```bash
