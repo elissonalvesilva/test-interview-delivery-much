@@ -122,8 +122,10 @@ npm run start
 > http://localhost:4002/version
  - health
 > http://localhost:4002/health
- - Get recipe, ex:
+ - Get recipe using a dish, ex:
 > http://localhost:4002/recipes/?i=onions&q=omelet
+- Get recipe using without dish, ex:
+> http://localhost:4002/recipes/?i=onions,potato
 
 |property|type|value|description|
 |:--------:|:----:|:-----:|-----------:|
