@@ -119,6 +119,15 @@ npm run start
 
 ## Routes
  - version
-> http://localhost:4001/version
+> http://localhost:4002/version
  - health
-> http://localhost:4001/health
+> http://localhost:4002/health
+ - Get recipe, ex:
+> http://localhost:4002/recipes/?i=onions&q=omelet
+
+|property|type|value|description|
+|:--------:|:----:|:-----:|-----------:|
+| i | array| array of string | the value must be set equals to ex: i=onions,beans, potato 
+|
+| q | string| string | ex: omelet|
+| page | number | integer | must to pass if want to pass to next page of results|

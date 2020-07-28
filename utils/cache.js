@@ -32,7 +32,9 @@ const Cache = {
   },
   generateCacheKey({ i, q }) {
     const arrayOfParams = i[0].split(',');
-    arrayOfParams.push(q);
+    if (q) {
+      arrayOfParams.push(q);
+    }
     if (Array.isArray(arrayOfParams) && arrayOfParams.length) {
       return arrayOfParams.filter(Boolean).join('^');
     }

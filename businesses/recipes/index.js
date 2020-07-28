@@ -15,6 +15,7 @@ const RecipesBusinesses = {
 
     // format request
     const cacheResponse = await Cache.get({ key: cacheKey });
+
     if (cacheResponse) {
       httpCode = 200;
       response = cacheResponse;
@@ -26,13 +27,13 @@ const RecipesBusinesses = {
         response = {
           message: 'Error to get recipe',
           error: response.message,
+          code: response.code,
         };
 
         if (response.code === 503) {
           httpCode = 503;
           response = {
             message: 'Puppy Service Unavailable',
-            error: response.message,
           };
         }
 
