@@ -127,7 +127,6 @@ npm run start
 
 |property|type|value|description|
 |:--------:|:----:|:-----:|-----------:|
-| i | array| array of string | the value must be set equals to ex: i=onions,beans, potato 
-|
+| i | array| array of string | the value must be set equals to ex: i=onions,beans, potato|
 | q | string| string | ex: omelet|
 | page | number | integer | must to pass if want to pass to next page of results|
